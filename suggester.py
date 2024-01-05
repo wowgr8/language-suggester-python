@@ -20,9 +20,10 @@ answer_three = input("- Beginner" "\n" "- Intermediate" "\n" "- Advanced" "\n").
 # answer_three = input( "\n" "- Beginner" "\n" "- Intermediate" "\n" "- Advanced" "\n")
 # print("\n")
 
-if (answer_one.lower() == "mobile" or answer_one.lower() == "web") and (answer_two.lower() == "macos" or answer_two.lower() == "windows") and (answer_three.lower() == "beginner" or answer_three.lower() == "intermediate"):
+if (answer_one == "mobile" or answer_one.lower() == "web") and (answer_two.lower() == "macos" or answer_two.lower() == "windows") and (answer_three.lower() == "beginner" or answer_three.lower() == "intermediate"):
   suggested_language = "Based on your preferences, we suggest considering Swift for iOS development or Kotlin for Android development!"
-elif: 
+elif (answer_one == "linux") and (answer_two == "windows") and (answer_three.lower() == "beginner" or answer_three.lower() == "intermediate"):
+  suggested_language = "Based on your preferences, we suggest considering JavaScript or Python for development!"
 
 
 print(answer_one, answer_two, answer_three)
