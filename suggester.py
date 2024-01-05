@@ -20,10 +20,12 @@ answer_three = input("- Beginner" "\n" "- Intermediate" "\n" "- Advanced" "\n").
 # answer_three = input( "\n" "- Beginner" "\n" "- Intermediate" "\n" "- Advanced" "\n")
 # print("\n")
 
-if (answer_one == "mobile" or answer_one.lower() == "web") and (answer_two.lower() == "macos" or answer_two.lower() == "windows") and (answer_three.lower() == "beginner" or answer_three.lower() == "intermediate"):
+if (answer_one == "mobile" or answer_one == "web") and (answer_two == "macos" or answer_two == "windows") and (answer_three == "beginner" or answer_three == "intermediate"):
   suggested_language = "Based on your preferences, we suggest considering Swift for iOS development or Kotlin for Android development!"
-elif (answer_one == "linux") and (answer_two == "windows") and (answer_three.lower() == "beginner" or answer_three.lower() == "intermediate"):
+elif (answer_one == "desktop") and (answer_two == "windows" or "linux") and (answer_three == "beginner" or answer_three == "intermediate"):
+  suggested_language = "Based on your preferences, we suggest considering JavaScript or Python for development!"
+elif (answer_one == "web") and (answer_two == "windows" or answer_two == "macos" or answer_two == "linux") and (answer_three == "beginner" or answer_three == "intermediate" or answer_three == "advanced"):
   suggested_language = "Based on your preferences, we suggest considering JavaScript or Python for development!"
 
 
-print(answer_one, answer_two, answer_three)
+print(suggested_language)
