@@ -15,12 +15,18 @@ answer_two = input("- windows" "\n" "- macOS" "\n" "- linux" "\n").lower()
 print("How comfortable are you with programming?")
 answer_three = input("- Beginner" "\n" "- Intermediate" "\n" "- Advanced" "\n").lower()
 
-if (answer_one == "mobile" or answer_one == "web") and (answer_two == "macos" or answer_two == "windows") and (answer_three == "beginner" or answer_three == "intermediate"):
-  suggested_language = "Based on your preferences, we suggest considering Swift for iOS development or Kotlin for Android development!"
-elif (answer_one == "desktop") and (answer_two == "windows" or "linux") and (answer_three == "beginner" or answer_three == "intermediate"):
-  suggested_language = "Based on your preferences, we suggest considering JavaScript or Python for development!"
-elif (answer_one == "web") and (answer_two == "windows" or answer_two == "macos" or answer_two == "linux") and (answer_three == "beginner" or answer_three == "intermediate" or answer_three == "advanced"):
-  suggested_language = "Based on your preferences, we suggest considering JavaScript for development!"
+if (answer_one == "mobile" or answer_one == "web"):
+  if (answer_two == "macos" or answer_two == "windows") and (answer_three == "beginner" or answer_three == "intermediate"):
+    suggested_language = "Based on your preferences, we suggest considering Swift for iOS development or Kotlin for Android development!"
+  else:
+    suggested_language = "Based on your preferences, we suggest considering Swift for iOS development or Kotlin for Android development!"
+
+
+    
+# elif (answer_one == "desktop") and (answer_two == "windows" or "linux") and (answer_three == "beginner" or answer_three == "intermediate"):
+#   suggested_language = "Based on your preferences, we suggest considering JavaScript or Python for development!"
+# elif (answer_one == "web") and (answer_two == "windows" or answer_two == "macos" or answer_two == "linux") and (answer_three == "beginner" or answer_three == "intermediate" or answer_three == "advanced"):
+#   suggested_language = "Based on your preferences, we suggest considering JavaScript for development!"
 
 
 print(suggested_language)
