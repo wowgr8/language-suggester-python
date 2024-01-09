@@ -22,9 +22,9 @@ if (answer_one == "mobile" or answer_one == "web"):
     suggested_language = "Based on your preferences, we suggest considering picking up Python!"
 elif (answer_one == "desktop"):
   if (answer_two == "windows" or "linux") and (answer_three == "beginner" or answer_three == "intermediate"):
-    suggested_language = "Based on your preferences, we suggest considering C# or Python for development!"
+    suggested_language = "Considering desktop development on Windows or Linux? Explore C# or Python for your projects!"
 elif (answer_one == "web") and (answer_two == "windows" or answer_two == "macos" or answer_two == "linux") and (answer_three == "beginner" or answer_three == "intermediate" or answer_three == "advanced"):
-    suggested_language = "Based on your preferences, we suggest considering JavaScript for development!"
+    suggested_language = "Interested in web development? JavaScript is a fantastic choice!"
 
 
 print(suggested_language)
